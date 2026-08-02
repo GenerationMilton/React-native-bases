@@ -1,8 +1,8 @@
-export const BasicFunctions = () => {
-  const addTwoNumbers = (a: number, b: number): string => {
-    return `${a + b}`;
-  };
+const addTwoNumbers = (a: number, b: number): string => {
+  return `${a + b}`;
+};
 
+export const BasicFunctions = () => {
   return (
     <>
       <h3>Funciones</h3>
