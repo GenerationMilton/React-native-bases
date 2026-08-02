@@ -1,17 +1,15 @@
 // import { BasicTypes } from "./typescript/BasicTypes";
 // import { ObjectLiterals } from "./typescript/ObjectLiterals";
-
-import "./App.css";
-import { BasicFunctions } from "./typescript/BasicFunctions";
+// import { BasicFunctions } from "./typescript/BasicFunctions";
 
 function App() {
   return (
-    <>
-      <h1>React + TS</h1>
+    <div className="flex justify-center items-center h-svh">
+      <h1 className="text-4xl mb-5">React + TS</h1>
       {/* <ObjectLiterals /> */}
       {/*<BasicTypes /> */}
-      <BasicFunctions />
-    </>
+      {/* <BasicFunctions /> */}
+    </div>
   );
 }
 
