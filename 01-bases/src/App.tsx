@@ -3,11 +3,14 @@
 // import { BasicFunctions } from "./typescript/BasicFunctions";
 // import { Counter } from "./components/Counter";
 
-import { LoginPage } from "./components/LoginPage";
+// import { LoginPage } from "./components/LoginPage";
+import { UserPage } from "./components/UserPage";
 import { AuthProvider as AuthProviderFromContext } from "./context/AuthContext";
 import type { ComponentType, PropsWithChildren } from "react";
 
-const AuthProvider = AuthProviderFromContext as ComponentType<PropsWithChildren<{}>>;
+const AuthProvider = AuthProviderFromContext as ComponentType<
+  PropsWithChildren<{}>
+>;
 
 function App() {
   return (
@@ -18,7 +21,8 @@ function App() {
         {/*<BasicTypes /> */}
         {/* <BasicFunctions /> */}
         {/* <Counter /> */}
-        <LoginPage />
+        {/* <LoginPage /> */}
+        <UserPage />
       </div>
     </AuthProvider>
   );
