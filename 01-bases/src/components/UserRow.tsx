@@ -1,13 +1,28 @@
-export const UserRow = () => {
+import type { User } from "../interfaces/reqres.response";
+
+interface Props {
+  user: User;
+}
+
+export const UserRow = ({ user }: Props) => {
+  const avatarSrc = user.avatar || "/avatar-placeholder.svg";
+
   return (
     <tr className="p-2">
       <td>
-        <img src="" className="rounded-full w-14" alt="User Avatar" />
+        <img
+          src={avatarSrc}
+          onError={(event) => {
+            event.currentTarget.src = "/avatar-placeholder.svg";
+          }}
+          className="rounded-full w-14 p-2"
+          alt="User Avatar"
+        />
       </td>
       <td>
-        {"Milton"} {"Munoz"}
+        {user.first_name} {user.last_name}
       </td>
-      <td>{"livemilton@hotmail.com"}</td>
+      <td>{user.email}</td>
     </tr>
   );
 };
