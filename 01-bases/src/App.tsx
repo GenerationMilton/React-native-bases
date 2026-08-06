@@ -4,7 +4,9 @@
 // import { Counter } from "./components/Counter";
 
 // import { LoginPage } from "./components/LoginPage";
-import { UserPage } from "./components/UserPage";
+// import { UserPage } from "./components/UserPage";
+import { FormsPage } from "./components/FormsPage";
+
 import { AuthProvider as AuthProviderFromContext } from "./context/AuthContext";
 import type { ComponentType, PropsWithChildren } from "react";
 
@@ -22,7 +24,8 @@ function App() {
         {/* <BasicFunctions /> */}
         {/* <Counter /> */}
         {/* <LoginPage /> */}
-        <UserPage />
+        {/* <UserPage /> */}
+        <FormsPage />
       </div>
     </AuthProvider>
   );
